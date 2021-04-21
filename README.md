@@ -27,10 +27,12 @@ Notification must be sent when a new report is available.
 List the dependencies of the Analysis-functionality.
 
 1. Access to the Server containing the telemetrics in a csv file
-1. _enter dependency
-1. _enter dependency
+2. Libraries like Pandas, Numpy to read CSV and mathematical operations 
+3. Libraries to identify/detect  for increasing trends and record 
+4. Libraries to convert captured data to PDF 
+5. Automation script for weekly report & mail notification 
+6. Libraries to do testing of the software functionalities like Unitest 
 
-(add more if needed)
 
 ### Mark the System Boundary
 
@@ -40,10 +42,11 @@ What is included in the software unit-test? What is not? Fill this table.
 |---------------------------|---------------|---
 Battery Data-accuracy       | No            | We do not test the accuracy of data
 Computation of maximum      | Yes           | This is part of the software being developed
-Off-the-shelf PDF converter | _enter Yes/No | _enter reasoning
-Counting the breaches       | _enter Yes/No | _enter reasoning
-Detecting trends            | _enter Yes/No | _enter reasoning
-Notification utility        | _enter Yes/No | _enter reasoning
+Computation of minimum      | Yes           | This is part of the software being developed
+Off-the-shelf PDF converter | Yes 			| PDF is among the deliverables of the software being developed 
+Counting the breaches       | Yes			| This is part of the software being developed and to be captured in records 
+Detecting trends            | Yes			| Trend detection is recorded in PDF for weekly notification 
+Notification utility        | Yes 			| Weekly mail notification of the pdf 
 
 ### List the Test Cases
 
@@ -52,9 +55,15 @@ Write tests in the form of `<expected output or action>` from `<input>` / when `
 Add to these tests:
 
 1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
-1. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-1. _enter a test
-1. _enter a test
+2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
+3. Write "No record found" to the PDF when the csv is not avialable in the specified location/server
+3. Write count of Breaches to the PDF from csv containing the telementry data when crosses the defined threshold
+4. Write "No record Breach" to the PDF from csv when all records found within threshold
+5. Write "No Positive Record" to the PDF when csv containing no postive value 
+6. Write "No Negative Record" to the PDF when csv containing no postive value 
+7. 
+
+
 
 (add more)
 
