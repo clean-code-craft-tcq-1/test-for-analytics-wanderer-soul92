@@ -71,7 +71,7 @@ Add to these tests:
 13. Write "Zero Record" when no contieous reading found for 30 min 
 14. Write "successfull saved" when PDF is genrated and saved in mentioned path/location/server
 15. Write "invalid receipient" when unvalid emaild is found while sending notifcation
-16. Write "Email delivered" when email delivery os succesful 
+16. Write "Email delivered" when email delivery is succesfull 
 17. Write "Error Msg" when notification is unsuccesfull 
 	
 
