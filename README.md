@@ -73,9 +73,7 @@ Add to these tests:
 15. Write "invalid receipient" when unvalid emaild is found while sending notifcation
 16. Write "Email delivered" when email delivery is succesfull 
 17. Write "Error Msg" when notification is unsuccesfull 
-	
 
-(add more)
 
 ### Recognize Fakes and Reality
 
