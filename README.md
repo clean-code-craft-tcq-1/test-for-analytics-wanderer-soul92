@@ -30,8 +30,10 @@ List the dependencies of the Analysis-functionality.
 2. Libraries like Pandas, Numpy to read CSV and mathematical operations 
 3. Libraries to identify/detect  for increasing trends and record 
 4. Libraries to convert captured data to PDF 
-5. Automation script for weekly report & mail notification 
-6. Libraries to do testing of the software functionalities like Unitest 
+5. Autherizatiob credentials and admin access to for server autherization/APIs access
+5. Automation script/server side libs for weekly report & mail notification 
+6. Libraries to do testing of the software functionalities like Unitest
+7. defined thresholds and arguments 
 
 
 ### Mark the System Boundary
@@ -54,16 +56,24 @@ Write tests in the form of `<expected output or action>` from `<input>` / when `
 
 Add to these tests:
 
-1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
-2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-3. Write "No record found" to the PDF when the csv is not avialable in the specified location/server
-3. Write count of Breaches to the PDF from csv containing the telementry data when crosses the defined threshold
-4. Write "No record Breach" to the PDF from csv when all records found within threshold
-5. Write "No Positive Record" to the PDF when csv containing no postive value 
-6. Write "No Negative Record" to the PDF when csv containing no postive value 
-7. 
-
-
+	1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
+	2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
+	3. Write #Zero Record found" to the PDF when the csv is not avialable in the specified location/server
+	4. Write "Server Connection not established" when server is out of reach 
+	5. Write "Wrong File Extention" when Excel is not in specified CSV format
+	6. Write "Validation Succesfull" when CSV file is having right data in at correct Header/Columns
+	7. Write "Invaid data" when CSV file is having data in wrong format
+	8. Write count of Breaches to the PDF from csv containing the telementry data when crosses the defined threshold
+	9. Write "No breach" to the PDF from csv when all records found within threshold
+	10. Write "Zero Positive Record" to the PDF when csv containing no postive value 
+	11. Write "Zero Negative Record" to the PDF when csv containing no postive value 
+	12. Write timestemp details from csv to PDF when contineous increasing reading found for 30 min 
+	13. Write "Zero Record" when no contieous reading found for 30 min 
+	14. Write "successfull saved" when PDF is genrated and saved in mentioned path/location/server
+	15. Write "invalid receipient" when unvalid emaild is found while sending notifcation
+	16. Write "Email delivered" when email delivery os succesful 
+	17. Write "Error Msg" when notification is unsuccesfull 
+	
 
 (add more)
 
@@ -77,8 +87,8 @@ Enter one part that's real and another part that's faked/mocked.
 |--------------------------|--------------|-----------------------------|---
 Read input from server     | csv file     | internal data-structure     | Fake the server store
 Validate input             | csv data     | valid / invalid             | None - it's a pure function
-Notify report availability | _enter input | _enter output               | _enter fake or mock
-Report inaccessible server | _enter input | _enter output               | _enter fake or mock
-Find minimum and maximum   | _enter input | _enter output               | _enter fake or mock
-Detect trend               | _enter input | _enter output               | _enter fake or mock
-Write to PDF               | _enter input | _enter output               | _enter fake or mock
+Notify report availability | PDF		  | mail notification           | Fake notify module
+Report inaccessible server | server path  | message/ error code         | Fake the server access 
+Find minimum and maximum   | csv file	  | min and max values          | None - it's a pure function
+Detect trend               | csv file     | date and time               | None - it's a pure function
+Write to PDF               |function data | PDF entry                   | Fake 
