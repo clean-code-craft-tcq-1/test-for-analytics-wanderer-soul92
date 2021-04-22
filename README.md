@@ -45,10 +45,10 @@ What is included in the software unit-test? What is not? Fill this table.
 Battery Data-accuracy       | No            | We do not test the accuracy of data
 Computation of maximum      | Yes           | This is part of the software being developed
 Computation of minimum      | Yes           | This is part of the software being developed
-Off-the-shelf PDF converter | Yes 			| PDF is among the deliverables of the software being developed 
-Counting the breaches       | Yes			| This is part of the software being developed and to be captured in records 
-Detecting trends            | Yes			| Trend detection is recorded in PDF for weekly notification 
-Notification utility        | Yes 			| Weekly mail notification of the pdf 
+Off-the-shelf PDF converter | Yes 	    | PDF is among the deliverables of the software being developed 
+Counting the breaches       | Yes	    | This is part of the software being developed and to be captured in records 
+Detecting trends            | Yes	    | Trend detection is recorded in PDF for weekly notification 
+Notification utility        | Yes           | Weekly mail notification of the pdf 
 
 ### List the Test Cases
 
@@ -85,7 +85,7 @@ Enter one part that's real and another part that's faked/mocked.
 |--------------------------|--------------|-----------------------------|---
 Read input from server     | csv file     | internal data-structure     | Fake the server store
 Validate input             | csv data     | valid / invalid             | None - it's a pure function
-Notify report availability | PDF		  | mail notification           | Fake notify module
+Notify report availability | PDF	  | mail notification           | Fake notify module
 Report inaccessible server | server path  | message/ error code         | Fake the server access 
 Find minimum and maximum   | csv file	  | min and max values          | None - it's a pure function
 Detect trend               | csv file     | date and time               | None - it's a pure function
