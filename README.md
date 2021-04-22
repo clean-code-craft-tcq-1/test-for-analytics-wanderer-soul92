@@ -58,7 +58,7 @@ Add to these tests:
 
 1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
 2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-3. Write #Zero Record found" to the PDF when the csv is not avialable in the specified location/server
+3. Write "Zero Record found" to the PDF when the csv is not avialable in the specified location/server
 4. Write "Server Connection not established" when server is out of reach 
 5. Write "Wrong File Extention" when Excel is not in specified CSV format
 6. Write "Validation Succesfull" when CSV file is having right data in at correct Header/Columns
