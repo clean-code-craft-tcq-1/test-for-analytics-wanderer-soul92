@@ -56,23 +56,23 @@ Write tests in the form of `<expected output or action>` from `<input>` / when `
 
 Add to these tests:
 
-	1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
-	2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-	3. Write #Zero Record found" to the PDF when the csv is not avialable in the specified location/server
-	4. Write "Server Connection not established" when server is out of reach 
-	5. Write "Wrong File Extention" when Excel is not in specified CSV format
-	6. Write "Validation Succesfull" when CSV file is having right data in at correct Header/Columns
-	7. Write "Invaid data" when CSV file is having data in wrong format
-	8. Write count of Breaches to the PDF from csv containing the telementry data when crosses the defined threshold
-	9. Write "No breach" to the PDF from csv when all records found within threshold
-	10. Write "Zero Positive Record" to the PDF when csv containing no postive value 
-	11. Write "Zero Negative Record" to the PDF when csv containing no postive value 
-	12. Write timestemp details from csv to PDF when contineous increasing reading found for 30 min 
-	13. Write "Zero Record" when no contieous reading found for 30 min 
-	14. Write "successfull saved" when PDF is genrated and saved in mentioned path/location/server
-	15. Write "invalid receipient" when unvalid emaild is found while sending notifcation
-	16. Write "Email delivered" when email delivery os succesful 
-	17. Write "Error Msg" when notification is unsuccesfull 
+1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
+2. Write "Invalid input" to the PDF when the csv doesn't contain expected data
+3. Write #Zero Record found" to the PDF when the csv is not avialable in the specified location/server
+4. Write "Server Connection not established" when server is out of reach 
+5. Write "Wrong File Extention" when Excel is not in specified CSV format
+6. Write "Validation Succesfull" when CSV file is having right data in at correct Header/Columns
+7. Write "Invaid data" when CSV file is having data in wrong format
+8. Write count of Breaches to the PDF from csv containing the telementry data when crosses the defined threshold
+9. Write "No breach" to the PDF from csv when all records found within threshold
+10. Write "Zero Positive Record" to the PDF when csv containing no postive value 
+11. Write "Zero Negative Record" to the PDF when csv containing no postive value 
+12. Write timestemp details from csv to PDF when contineous increasing reading found for 30 min 
+13. Write "Zero Record" when no contieous reading found for 30 min 
+14. Write "successfull saved" when PDF is genrated and saved in mentioned path/location/server
+15. Write "invalid receipient" when unvalid emaild is found while sending notifcation
+16. Write "Email delivered" when email delivery os succesful 
+17. Write "Error Msg" when notification is unsuccesfull 
 	
 
 (add more)
